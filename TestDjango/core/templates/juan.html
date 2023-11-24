@@ -1,0 +1,126 @@
+{% extends "./base.html" %}
+
+{% block title %} Pagina Principal {% endblock %}
+
+{% block body %}
+{% load static %}
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+
+    <link rel="stylesheet" href="{% static 'css/style2.css'%}">
+
+    <link rel="stylesheet" href="{% static 'css/jstyle.css'%}">
+
+    <link rel="stylesheet" href="{% static 'css/jstyle2.css'%}">
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+  </head>
+  <body>
+    <div  class="container d-flex align-items-center flex-column ">
+      <a class="" href="pag_principal.html">
+        <img src="img/023.jpg" class="img-cabecera" alt=""/></a>
+    </div>
+
+      
+  <div class="about">
+    <img src="img/024.jpg" alt="Andres">
+    <div class="about-info">
+      <h2>UN POCO SOBRE JUAN</h2>
+      <div class="divider"></div>
+      <p> 
+        Don Juan, un amable y conocido hombre de 58 años en el barrio de La Cisterna, 
+        es reconocido por su tienda de joyería, donde vende anillos, collares y pulseras. 
+        Sin embargo, su influencia en la comunidad va más allá de ser un comerciante. 
+        También posee un taller donde repara diferentes productos que le traen sus vecinos, 
+        ganándose una excelente reputación por su destreza y habilidad.<br><br>
+
+        Pero Don Juan no se limita solo a las reparaciones, sino que comparte su pasión 
+        por la orfebrería impartiendo clases en su taller. Este arte, que implica trabajar 
+        con metales preciosos para crear joyas y utensilios, es enseñado por Don Juan con 
+        paciencia y dedicación. Sus alumnos tienen la oportunidad de aprender y desarrollar 
+        habilidades en este antiguo oficio bajo su guía entusiasta.<br><br>
+        
+        La generosidad de Don Juan también destaca, siempre dispuesto a ayudar 
+        a los demás, ya sea reparando una joya preciada o brindando asesoramiento
+         a quienes buscan convertirse en orfebres. Su amabilidad y humildad han ganado 
+         el aprecio y el respeto de aquellos que lo conocen.<br><br>
+        
+        A lo largo de los años, Don Juan ha sido testigo de historias de amor, 
+        amistad y momentos importantes en la vida de las personas a través de las 
+        joyas que ha creado y reparado. Sus habilidades y dedicación lo han convertido 
+        en parte integral de la comunidad, siendo un confidente y un creador de recuerdos 
+        invaluables.<br><br>
+        
+        Con su tienda de joyería y taller de orfebrería, 
+        Don Juan ha dejado una huella duradera en su barrio. Su pasión por su oficio, 
+        su generosidad y amabilidad son ejemplos inspiradores para todos. Él personifica 
+        el valor del trabajo artesanal y la importancia de mantener vivas las tradiciones. 
+        La comunidad se siente afortunada de contar con Don Juan como un tesoro local, 
+        un verdadero artesano y un símbolo de compromiso y calidad en su oficio.
+        <br></p>    
+    </div>
+  </div>
+
+  <section class="container">
+    <div class="row justify-content-md-center">
+      <img src="img/separador2.png" alt=""/>
+      <div class="col-12 text-center">
+        <h2 class="text-warning text-uppercase h6">JOYAS</h2>
+        <h3 class="text-capitalize">Joyería destacada</h3>
+      </div>
+    </div>
+ </section>
+
+<section class="photos">
+  <article class="gallery">
+
+    <div class="img-a">
+      <img src="img/jua5.jpg"/>
+    </div> 
+    <div class="img-b">
+      <img src="img/jua3.jpg"/>
+    </div> 
+    <div class="img-c">
+      <img src="img/jua1.jpg"/>
+    </div> 
+    <div class="img-d">
+      <img src="img/jua2.jpg"/>
+    </div> 
+    <div class="img-e">
+      <img src="img/jua4.jpg"/>
+    </div> 
+    <div class="img-f">
+      <img src="img/jua6.jpg"/>
+    </div> 
+  </article>
+</section>
+
+<br>
+<br>
+
+
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+                integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+{% endblock %}

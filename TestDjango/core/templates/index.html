@@ -1,0 +1,141 @@
+{% extends "./base.html" %}
+
+{% block title %} Pagina Principal {% endblock %}
+
+{% block body %}
+{% load static %}
+
+<!-- Bootstrap Carousel -->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+       
+      <img src="{% static 'img2/copete.jpg' %}" class="d-block w-100" height="550">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'img2/ensalada.jpg' %}" class="d-block w-100" height="550">
+        <div class="carousel-caption d-flex justify-content-center align-items-center">
+          
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'img2/parrillada.jpg' %}" class="d-block w-100" height="550">
+        <div class="carousel-caption d-flex justify-content-center align-items-center">
+          
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+    <!-- Contenido 1 -->
+    <section class="container">
+    
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 clas="text-warning text-uppercase h6"><br><br>¿Quiénes somos?</h2>
+          <h3 class="text-capitalize">Somos el mejor restaurante de comida casera chilena.</h3>
+          <p class="text-muted">
+  
+            El Comilón es un destacado restaurante que se especializa en ofrecer las mejores comidas caseras chilenas. 
+            Su enfoque principal es brindar a sus comensales una experiencia culinaria auténtica y reconfortante. 
+            El restaurante se enorgullece de utilizar ingredientes frescos y de alta calidad para preparar platos tradicionales chilenos. 
+            Desde asados de cordero y empanadas hasta cazuelas y pastel de choclo, cada bocado es una explosión de sabores típicos de la gastronomía chilena. 
+            El ambiente acogedor y familiar complementa la experiencia, haciendo que los clientes se sientan como en casa. 
+            El Comilón es el lugar perfecto para disfrutar de las delicias culinarias chilenas en un entorno agradable y acogedor.
+          </p>
+        </div>
+        <img src="{% static 'img2/separador2.png' %}" alt=""/>
+      </div>
+      </section>
+  
+      <!-- TARJETAS -->
+      <section class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-12 text-center">
+            <h2 class="text-warning text-uppercase h6">Destacados</h2>
+            <h3 class="text-capitalize">Algunos de nuestros artistas</h3>
+          </div>
+  
+          <!--Tarjeta 1-->
+          <article class="col-md-6 col-lg-4 card-effect">
+            <div class="card">
+              <img src="{% static 'img2/014.png' %}" alt="Raiting" class="card-img card-img-filter"/>
+              <div class="card-img-overlay text-white d-flex flex-column justify-content-center text-center">
+                <h4>COMIDAS</h4>
+                <p>
+                  La comida casera es sabrosa, llena de amor y cuidado, evoca recuerdos y proporciona una experiencia culinaria reconfortante y auténtica.
+                </p>
+             <a href="{% url 'Menu' %}" class="text-reset">Encuentralos aquí.</a>
+              </div>
+            </div>
+          </article>
+  
+          <!--Tarjeta 2-->
+          <article class="col-md-6 col-lg-4 card-effect">
+            <div class="card">
+              <img src="{% static 'img2/012.png' %}" alt="Raiting" class="card-img card-img-filter"/>
+              <div class="card-img-overlay text-white d-flex flex-column justify-content-center text-center">
+                <h4>TRAGOS</h4>
+                <p>
+                  Encuentra aquí los mejores tragos.
+                </p>
+                <a href="{% url 'Menu' %}" class="text-reset">Encuentralos aquí.</a>
+              </div>
+            </div>
+          </article>
+  
+          
+          <!--Tarjeta 3-->
+          <article class="col-md-6 col-lg-4 card-effect mt-md-4 mt-lg-0">
+            <div class="card">
+              <img src="{% static 'img2/016.png' %}" alt="Raiting" class="card-img card-img-filter"/>
+              <div class="card-img-overlay text-white d-flex flex-column justify-content-center text-center">
+                <h4>POSTRES</h4>
+                <p>
+                  Los postres caseros son deliciosos, satisfacen los antojos más dulces y te brindan una sensación reconfortante y única.
+                </p>
+                <a href="{% url 'Menu' %}" class="text-reset">Encuentralos aquí.</a>
+              </div>
+            </div>
+          </article>
+          <img src="{% static 'img2/separador2.png' %}" alt=""/>
+        </div>
+     </section>
+  <!-- Comentarios -->
+    <section class="comments"> 
+    
+    <div class="container">
+      <div class="row">
+      <blockquote class="col-12 text-dark text-center">
+        <br>
+        <br>
+        <img src="{% static 'img/057.png' %}" alt="Marcella Panza"  class="comments__img"/>
+        <br>
+        <br>
+        <p>Llevo mucho tiempo llendo al restaurante de esta página, 
+          estoy muy agradecida que tengan una web donde poder ver sus productos y llegar con más fácilidad a ellos.</p>
+          <footer class="blockquote-footer text-grey">
+            <cite>Marcella Panza</cite>
+          </footer>
+  
+      </blockquote>
+    </div>
+    </div>
+  
+  </section>
+  
+  <br><br>
+  {% endblock %}

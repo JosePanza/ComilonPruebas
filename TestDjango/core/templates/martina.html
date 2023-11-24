@@ -1,0 +1,115 @@
+{% extends "./base.html" %}
+
+{% block title %} Pagina Principal {% endblock %}
+
+{% block body %}
+{% load static %}
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+
+    <link rel="stylesheet" href="{% static 'css/style2.css'%}">
+
+    <link rel="stylesheet" href="{% static 'css/jstyle.css'%}">
+
+    <link rel="stylesheet" href="{% static 'css/jstyle2.css'%}">
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+  </head>
+
+      
+  <div class="about">
+    <img src="img/025.jpg" alt="Andres">
+    <div class="about-info">
+      <h2>UN POCO SOBRE MARTINA</h2>
+      <div class="divider"></div>
+      <p> 
+        Martina, una joven de 30 años, descubrió su amor por el arte y la creatividad 
+        jugando con barro desde temprana edad. Su talento se hizo evidente al destacarse 
+        constantemente en los concursos de manualidades de la escuela, demostrando su pasión 
+        por crear objetos con sus propias manos. Buscando oportunidades para crecer, Martina 
+        se embarcó en cursos en línea y presenciales para perfeccionar sus habilidades 
+        en el trabajo con greda, un material que le permitía expresar su arte de manera única.<br><br>
+
+        Con el tiempo, Martina ganó reconocimiento y estableció conexiones 
+        con otras personas interesadas en su trabajo. Esto la impulsó a abrir
+         una pequeña tienda en Maipú, su hogar de toda la vida junto a su familia. 
+         Su tienda se convirtió en un espacio acogedor lleno de piezas únicas que 
+         reflejaban la belleza y la originalidad de su talento.<br><br>
+        
+        Martina encontró éxito y también una satisfacción personal al ver cómo sus creaciones 
+        alegraban y enriquecían la vida de sus clientes. Cada pieza que crea transmite su amor 
+        por el arte y su conexión con la greda como material artístico.<br><br>
+        
+        La historia de Martina es un testimonio inspirador del poder de perseguir 
+        los sueños y convertir la pasión en una profesión. A través de su trabajo, 
+        ella demuestra que es posible encontrar felicidad y éxito siguiendo el camino 
+        del arte y la creatividad. Su pequeña tienda en Maipú es más que un lugar de 
+        venta de productos; es un testimonio del poder transformador del arte y una 
+        inspiración para aquellos que desean expresar su propio espíritu creativo.
+        <br></p>    
+    </div>
+  </div>
+
+  <section class="container">
+    <div class="row justify-content-md-center">
+      <img src="img/separador2.png" alt=""/>
+      <div class="col-12 text-center">
+        <h2 class="text-warning text-uppercase h6">ESCULTURAS</h2>
+        <h3 class="text-capitalize">Taller</h3>
+      </div>
+    </div>
+ </section>
+
+<section class="photos">
+  <article class="gallery">
+
+    <div class="img-a">
+      <img src="img/mar4.jpg"/>
+    </div> 
+    <div class="img-b">
+      <img src="img/mar2.jpg"/>
+    </div> 
+    <div class="img-c">
+      <img src="img/mar1.jpg"/>
+    </div> 
+    <div class="img-d">
+      <img src="img/mar3.jpg"/>
+    </div> 
+    <div class="img-e">
+      <img src="img/mar6.jpg"/>
+    </div> 
+    <div class="img-f">
+      <img src="img/mar5.jpg"/>
+    </div> 
+  </article>
+</section>
+
+<br>
+<br>
+
+
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+                integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+{% endblock %}

@@ -1,0 +1,133 @@
+{% extends "./base.html" %}
+
+{% block title %} Pagina Principal {% endblock %}
+
+{% block body %}
+{% load static %}
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+
+    <link rel="stylesheet" href="{% static 'css/style2.css'%}">
+
+    <link rel="stylesheet" href="{% static 'css/jstyle.css'%}">
+
+    <link rel="stylesheet" href="{% static 'css/jstyle2.css'%}">
+
+    <link rel="stylesheet" href="{% static 'css/estilos.css'%}" />
+
+    <link rel="stylesheet" href="{% static 'css/cosas.css'%}" />
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+  </head>
+  <body>
+    <div  class="container col-xs-12 col-md-6 col-lg-3 d-flex align-items-center flex-column ">
+      <a class="" href="pag_principal.html">
+        <img src="{% static 'img/031.jpg' %}" alt=""/></a>
+        
+    </div>
+
+      
+  <div class="about">
+    <a href="{% url 'artistas'%}" class="btn btn-primary">atras</a>
+    
+    <img src="{% static 'img/030.jpg' %}" alt="Andres">
+    <div class="about-info">
+      <h2>UN POCO SOBRE CAMILO</h2>
+      <div class="divider"></div>
+      <p> 
+        Camilo, un hombre de 58 años, disfruta de una vida plena como padre 
+        de tres hijos y esposo de Julieta. Residen en Cerrillos, donde Camilo 
+        ha encontrado su pasión y felicidad como pastelero en una panadería local. 
+        Aunque estudió contabilidad, siempre soñó con crear pasteles profesionales
+         y deleitar a las personas con sus creaciones.<br><br>
+
+        Con siete años de experiencia en su actual empleo, 
+        Camilo ha encontrado un entorno donde puede desarrollar su talento y 
+        dedicarse a su verdadera pasión. A pesar de tener una formación académica 
+        en otro campo, está decidido a seguir su vocación en la pastelería y ha comenzado a 
+        estudiar diferentes cursos para perfeccionar sus habilidades en la creación de postres exquisitos.<br><br>
+        
+        Su objetivo principal es abrir su propia pastelería. Camilo sueña con ofrecer a la comunidad un 
+        lugar donde puedan disfrutar de pasteles y postres únicos, elaborados con amor y precisión. Está decidido 
+        a mejorar constantemente sus productos, perfeccionando técnicas y experimentando con nuevas recetas, para brindar 
+        experiencias culinarias inolvidables a sus futuros clientes.<br><br>
+        
+        Aunque su camino no ha sido convencional, Camilo encuentra satisfacción en su trabajo actual y 
+        valora cada oportunidad para aprender y crecer como pastelero. Su dedicación y perseverancia reflejan su 
+        determinación y pasión por convertir su sueño en realidad.<br><br>
+        
+        La historia de Camilo es un recordatorio de que seguir una pasión y perseguir los sueños puede 
+        conducir a la felicidad y realización personal. Su valentía para seguir su corazón y buscar su 
+        verdadera vocación es un ejemplo inspirador para aquellos que anhelan hacer lo que aman. Con cada 
+        pastel que hornea, Camilo se acerca un paso más a su objetivo de tener su propia pastelería y brindar 
+        alegría a través de sus dulces creaciones.       
+        <br></p>    
+    </div>
+  </div>
+  
+  <section class="container">
+    <div class="row justify-content-md-center">
+      <img src="img/separador2.png" alt=""/>
+      <div class="col-12 text-center">
+        <h2 class="text-warning text-uppercase h6">REPOSTERIA</h2>
+        <h3 class="text-capitalize">Taller</h3>
+      </div>
+    </div>
+ </section>
+ 
+<section class="photos">
+  <article class="gallery">
+
+    <div class="img-a">
+      <img src="{% static 'img/cam1.jpg' %}"/>
+    </div> 
+    <div class="img-b">
+      <img src="{% static 'img/cam3.jpg' %}"/>
+    </div> 
+    <div class="img-c">
+      <img src="{% static 'img/cam4.jpg' %}"/>
+    </div> 
+    <div class="img-d">
+      <img src="{% static 'img/cam5.jpg' %}"/>
+    </div> 
+    <div class="img-e">
+      <img src="{% static 'img/cam6.jpg' %}"/>
+    </div> 
+    <div class="img-f">
+      <img src="{% static 'img/cam2.jpg' %}"/>
+    </div> 
+  </article>
+  
+</section>
+
+<br>
+
+<br>
+
+
+  
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+                integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+{% endblock %}

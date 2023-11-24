@@ -1,0 +1,124 @@
+{% extends "./base.html" %}
+
+{% block title %} Pagina Principal {% endblock %}
+
+{% block body %}
+{% load static %}
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+
+    <link rel="stylesheet" href="{% static 'css/style2.css'%}">
+
+    <link rel="stylesheet" href="{% static 'css/jstyle.css'%}">
+
+    <link rel="stylesheet" href="{% static 'css/jstyle2.css'%}">
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+  </head>
+  <body>
+    <div  class="container col-xs-12 col-md-6 col-lg-3 d-flex align-items-center flex-column ">
+      <a class="" href="pag_principal.html">
+        <img src="{% static 'img/028.jpg' %}" alt=""/></a>
+    </div>
+
+      
+  <div class="about">
+    <img src="{% static 'img/027.jpg' %}" alt="Andres">
+    <div class="about-info">
+      <h2>UN POCO SOBRE SOFÍA</h2>
+      <div class="divider"></div>
+      <p> 
+        Sofía, una mujer de 45 años, ha convertido su hogar en un refugio de hilos y lanas, 
+        donde su pasión por el tejido a mano cobra vida. Junto a su madre, se dedica con entusiasmo 
+        a crear una variedad de productos, desde chalecos y suéteres hasta cobertores, utilizando su 
+        habilidad y experiencia en el arte de la tejeduría.<br><br>
+
+        Desde su infancia, Sofía ha sido testigo del poder del tejido gracias a su madre, 
+        quien siempre confeccionaba prendas para sus hermanos mayores. Inspirada por esta 
+        tradición familiar, Sofía ha abrazado el valor y la belleza del tejido artesanal, 
+        llevando consigo el legado generacional de su familia.<br><br>
+        
+        En su hogar, cada hilo se entrelaza con amor y destreza, dando vida a 
+        piezas únicas y acogedoras que reflejan el talento innato de Sofía. 
+        Cada chaleco, suéter o cobertor es una obra maestra tejida a mano, 
+        cuidadosamente diseñada y confeccionada para brindar calidez y comodidad a quienes los usan.<br><br>
+        
+        Aunque su dedicación al tejido ocupa un lugar especial en su vida, Sofía también encuentra 
+        tiempo para ser una madre ejemplar. Sus hijos han crecido admirando cómo su madre crea belleza 
+        a partir de hilos, y han aprendido los valores de paciencia, dedicación y creatividad que están presentes en cada pieza.<br><br>
+        
+        Además de tejer para su familia, Sofía ha logrado expandir su alcance y enviar sus productos a sus hermanos 
+        en Concepción. Esta conexión a través del arte se convierte en un lazo tangible que une a la familia, a pesar de la distancia física.<br><br>
+        
+        La historia de Sofía es un testimonio vivo de cómo una pasión arraigada en la tradición familiar puede 
+        dar forma a una vida llena de belleza y significado. Su dedicación a la tejeduría no solo es una expresión 
+        de su talento, sino también un vínculo que trasciende las generaciones y transmite amor y calidez a través 
+        de sus creaciones. Cada pieza que Sofía teje es una manifestación tangible de la conexión y el amor compartido 
+        en su hogar, y un recordatorio del poder transformador del arte tejido a mano.        
+        <br></p>    
+    </div>
+  </div>
+
+  <section class="container">
+    <div class="row justify-content-md-center">
+      <img src="{% static 'img/separador2.png' %}" alt=""/>
+      <div class="col-12 text-center">
+        <h2 class="text-warning text-uppercase h6">TEJIDOS</h2>
+        <h3 class="text-capitalize">TALLER</h3>
+      </div>
+    </div>
+ </section>
+
+<section class="photos">
+  <article class="gallery">
+
+    <div class="img-a">
+      <img src="{% static 'img/so2.jpg' %}"/>
+    </div> 
+    <div class="img-b">
+      <img src="{% static 'img/so1.jpg' %}"/>
+    </div> 
+    <div class="img-c">
+      <img src="{% static 'img/so4.jpg' %}"/>
+    </div> 
+    <div class="img-d">
+      <img src="{% static 'img/so5.jpg' %}"/>
+    </div> 
+    <div class="img-e">
+      <img src="{% static 'img/so6.jpg' %}"/>
+    </div> 
+    <div class="img-f">
+      <img src="{% static 'img/so3.jpg' %}"/>
+    </div> 
+  </article>
+</section>
+
+<br>
+<br>
+
+
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+                integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+{% endblock %}
